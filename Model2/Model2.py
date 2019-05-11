@@ -51,8 +51,8 @@ class Model2:
     
 
 if __name__ == '__main__':
-    X=pickle.load(open("pickle/X_3021.pickle","rb"))
-    y=pickle.load(open("pickle/y_3021.pickle","rb"))
+    X=pickle.load(open("pickle/X_391.pickle","rb"))
+    y=pickle.load(open("pickle/y_391.pickle","rb"))
   
     #train and save the model
     model = Model2()
