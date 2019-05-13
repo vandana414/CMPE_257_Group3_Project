@@ -8,6 +8,8 @@ from sklearn.ensemble import RandomForestClassifier
 class Model2:
     #random forest classifier
     model = RandomForestClassifier(n_estimators=300, max_depth=10,random_state=0)
+	#model = svm.SVC(gamma=0.0001,kernel='rbf')
+    #model = LogisticRegression(C=0.001,penalty='l2',random_state=10,solver='liblinear',multi_class='ovr',class_weight='balanced')
 
 
     hog = cv2.HOGDescriptor()
@@ -57,4 +59,6 @@ if __name__ == '__main__':
     #train and save the model
     model = Model2()
     model.trainModel(X,y)
-    model.save("models/model2")
+    model.save("models/model_rf")
+	#model.save("models/model_svm")
+	#model.save("models/model_lr")
